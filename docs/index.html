@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>C3V</title>
+    <link rel="shortcut icon" type="image/jpg" href="" />
+    <!-- <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bulma@0.9.3/css/bulma.min.css"> -->
+    <link rel="stylesheet" href="css/styles.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/jpswalsh/academicons@1/css/academicons.min.css">
+    <script src="https://kit.fontawesome.com/49f46e7382.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <section class="section">
+        <div class="container is-max-widescreen">
+            <h1 class="title is-2 has-text-centered">
+                Compositional 3D-aware Video Generation with LLM Director
+            </h1>
+            <p class="subtitle is-4 has-text-centered">
+                 <br>
+            </p>
+        </div>
+    </section>
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="title is-4">
+                    Comparison with State-of-the-Art Methods
+                </h1>
+                <hr style="margin-top:0px">
+                <p><center><strong>Prompt: In a Magician's magical cabin alone in a serene forest, an alien walking on the floor, starting from the cabin's door to the mow near the bottom right corner of this image.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <span> <center>Ours</center> </span> </td>
+                        <td width="38%"> <span> <center>Ours: Depth</center> </span> </td>
+                    </tr>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/prompt1_our_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/prompt1_our_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr align="center">
+                            <td width="33%"> <span> <center>4D-FY</center> </span> </td>
+                            <td width="33%"> <span> <center>Comp4D</center> </span> </td>
+                            <td width="33%"> <span> <center>VideoCrafter2</center> </span> </td>
+                        </tr>
+                        <tr align="center">
+                            <td width="33%"> <video width="70%" controls> <source src="video/prompt1_4dfy.mp4" type="video/mp4"> </video> </td>
+                            <td width="33%"> <video width="90%" controls> <source src="video/prompt1_comp4d.mp4" type="video/mp4"> </video> </td>
+                            <td width="33%"> <video width="80%" controls> <source src="video/prompt1_videocrafter.mp4" type="video/mp4"> </video> </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                <br>
+                <hr style="margin-top:0px">
+                <p><center><strong>Prompt: Four characters stood on the stage. In front of the stage, a man and a woman are performing China Kung Fu and dancing respectively. On the right side of the stage, a skeleton man is dancing, and behind them, a clown is performing.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <span> <center>Ours</center> </span> </td>
+                        <td width="38%"> <span> <center>Ours: Depth</center> </span> </td>
+                    </tr>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/prompt2_our_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/prompt2_our_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <table>
+                    <tbody>
+                        <tr align="center">
+                            <td width="33%"> <span> <center>4D-FY</center> </span> </td>
+                            <td width="33%"> <span> <center>Comp4D</center> </span> </td>
+                            <td width="33%"> <span> <center>VideoCrafter2</center> </span> </td>
+                        </tr>
+                        <tr align="center">
+                            <td width="33%"> <video width="70%" controls> <source src="video/prompt2_4dfy.mp4" type="video/mp4"> </video> </td>
+                            <td width="33%"> <video width="90%" controls> <source src="video/prompt2_comp4d.mp4" type="video/mp4"> </video> </td>
+                            <td width="33%"> <video width="80%" controls> <source src="video/prompt2_videocrafter.mp4" type="video/mp4"> </video> </td>
+                        </tr>
+                    </tbody>
+                    </table>
+                <br>
+                <hr style="margin-top:0px">
+            </div>
+        </div>
+        </div>
+    <br>
+    </section>
+
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="title is-4">
+                    Applications on Controllable Generation: Actor's Appearance Editing
+                </h1>
+                <hr style="margin-top:0px">
+                <p><center><strong>Prompt: A black man wearing a green t-shirt playing Kungfu on the stage.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/appearedit1_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/appearedit1_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <br>
+                <p><center><strong>Prompt: Turn the character into a fairy.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/appearedit2_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/appearedit2_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <br>
+                <p><center><strong>Prompt: Turn the character into a warlock.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/appearedit3_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/appearedit3_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <hr style="margin-top:0px">
+                <hr style="margin-top:0px">
+            </div>
+        </div>
+        </div>
+    <br>
+    </section>
+
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="title is-4">
+                    Applications on Controllable Generation: Actor's Motion Editing
+                </h1>
+                <hr style="margin-top:0px">
+                <p><center><strong>Prompt: A demon slayer performing a han and tang dance on the stage.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/motionedit1_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/motionedit1_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <br>
+                <p><center><strong>Prompt: Turn the motion of the character into a ballet.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/motionedit2_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/motionedit2_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <br>
+                <p><center><strong>Prompt: Turn the motion of the character into a kin kong exotic dance.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/motionedit3_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/motionedit3_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <hr style="margin-top:0px">
+                <hr style="margin-top:0px">
+            </div>
+        </div>
+        </div>
+    <br>
+    </section>
+
+    <section>
+        <div class="container">
+        <div class="row">
+            <div class="col-12 text-center">
+                <h1 class="title is-4">
+                    Applications on Controllable Generation: Scene Editing
+                </h1>
+                <hr style="margin-top:0px">
+                <p><center><strong>Prompt: A revenant dancing Daily Lovedive in a ultra-modern mega villa by the sea with swimming pool.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/sceneedit1_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/sceneedit1_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <br>
+                <p><center><strong>Prompt: Turn the scene into a long anime-style road with anime-blocks and little anime-grass.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/sceneedit2_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/sceneedit2_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <br>
+                <p><center><strong>Prompt: Turn the character into a postapocalyptic city in desert.</strong></center></p>
+                <br>
+                <table>
+                <tbody>
+                    <tr align="center">
+                        <td width="38%"> <video width="60%" controls> <source src="video/sceneedit3_video.mp4" type="video/mp4"> </video> </td>
+                        <td width="38%"> <video width="60%" controls> <source src="video/sceneedit3_depth.mp4" type="video/mp4"> </video> </td>
+                    </tr>
+                </tbody>
+                </table>
+                <br>
+                <hr style="margin-top:0px">
+                <hr style="margin-top:0px">
+            </div>
+        </div>
+        </div>
+    <br>
+    </section>
+
+</body>
+
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+
+        // Get all "navbar-burger" elements
+        const $navbarBurgers = Array.prototype.slice.call(document.querySelectorAll('.navbar-burger'), 0);
+
+        // Check if there are any navbar burgers
+        if ($navbarBurgers.length > 0) {
+
+            // Add a click event on each of them
+            $navbarBurgers.forEach(el => {
+                el.addEventListener('click', () => {
+
+                    // Get the target from the "data-target" attribute
+                    const target = el.dataset.target;
+                    const $target = document.getElementById(target);
+
+                    // Toggle the "is-active" class on both the "navbar-burger" and the "navbar-menu"
+                    el.classList.toggle('is-active');
+                    $target.classList.toggle('is-active');
+
+                });
+            });
+        }
+    });
+</script>
+
+</html>
